@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  test:
+    build: ..
+    ports:
+      - "16001:8080"
+    environment:
+      LISTEN_PORT: 8080
+      CONTENT_BODY: |
+        <html><body><p>Test</p></body></html>
